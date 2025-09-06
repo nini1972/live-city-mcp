@@ -139,5 +139,5 @@ if __name__ == "__main__":
     # On HuggingFace Spaces, do not use MCP and keep public sharing off.
     # Use environment variables to control behavior if needed.
     HF_SPACE = os.environ.get("HF_SPACE", "").lower() in ("1", "true", "yes")
-    demo.launch(share=False, mcp_server=False, debug=not HF_SPACE)
+    demo.launch(share=False, mcp_server=True, debug=not HF_SPACE)
 # ...existing code...
